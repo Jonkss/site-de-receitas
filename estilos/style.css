@@ -10,10 +10,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+ main, footer, img#background-head {
+    transition: width .2s, height .2s;
+    transition-timing-function: ease;
+}
+
 /* início do header */
 
 header {
-    background-color: #f7e4d4;
+    display: flex;
+    justify-content: center;
+    background-color: #fff2e7;
 }
 
 nav {
@@ -80,13 +87,24 @@ section.receitas {
     color: #2e2e2e;
     border-radius: 20px;
     width: 90%;
+    height: 900px;
     padding: 10px;
     margin-bottom: 40px;
 }
 
+section#receita-destaque {
+    height: 100%;
+}
+
+div.receitas-row {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
 img.img-receita {
     width: 100%;
-    max-height: 350px;
+    height: 350px;
     border-radius: 20px ;
 }
 
@@ -138,6 +156,10 @@ div.listas {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+}
+
+div.receitas-row {
+    align-items: center;
 }
 
 div.massa {
