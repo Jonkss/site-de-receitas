@@ -43,6 +43,7 @@ a#contato {
     font-size: 1.2em;
     color: #333;
     padding: 5px;
+    margin-top: 4px;
 }
 
 img#background-head {
@@ -123,6 +124,10 @@ ul {
     list-style-type: none;
 }
 
+li {
+    margin: 3px 0px;
+}
+
 div.container-listas {
     display: flex;
     flex-flow: column nowrap;
@@ -131,8 +136,12 @@ div.container-listas {
 
 div.listas {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
+}
+
+div.massa {
+    margin-bottom: 15px;
 }
 
 div.preparo {
